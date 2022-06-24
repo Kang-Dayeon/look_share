@@ -1,6 +1,8 @@
 <template>
   <div id="header">
-    <font-awesome-icon icon="fa-solid fa-bars-staggered" />
+    <div class="header__inner">
+      <h1 class="header__logo">Look Share</h1>
+    </div>
   </div>
 </template>
 
@@ -13,18 +15,6 @@ export default {
 };
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: black;
-}
-#header {
-  padding: 10px;
-  width: 100%;
-  height: 100px;
-  border: 1px solid black;
-  background-color: blanchedalmond;
-}
+<style lang="scss">
+@import "./assets/css/main.scss";
 </style>
