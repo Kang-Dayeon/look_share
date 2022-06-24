@@ -90,6 +90,8 @@ a{
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
+box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
   }
   &__content{
     position: absolute;
