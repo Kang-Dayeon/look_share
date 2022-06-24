@@ -39,7 +39,7 @@ a{
   z-index: 20;
   padding: 0 50px;
   width: 100%;
-  height: 100px;
+  height: 60px;
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   &__menu{
@@ -51,40 +51,63 @@ a{
     height: 100%;
     &__list{
       font-family: 'Rubik Puddles', cursive;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 400;
       color: white;
       cursor: pointer;
     }
   }
 }
-
-// contents
 .contents{
-  padding: 50px 30px;
-  width: 100%;
-  min-height: calc(100vh - 160px);
+  padding: 50px 0;
   background: rgb(174,174,238);
   background: radial-gradient(circle, rgba(174,174,238,1) 0%, rgba(255,244,254,1) 74%);
   overflow: hidden;
 }
+
+// card
 .card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__list{
-    margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 50px;
+  width: 100%;
+  height: auto;
+  &__wrap{
+    position: relative;
+    margin: 0 auto;
     width: 500px;
     height: 600px;
+  }
+  &__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
     background-color: #eee;
     border-radius: 30px;
-    &:first-child{
-      margin-top: 0;
-    }
+    background: url(./../src/assets/image/post.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  &__content{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
   }
 }
 
-@media screen and (max-width: 420px) {
+
+@media screen and (max-width: 520px) {
   .header{
     height: 50px;
     &__logo{
@@ -93,11 +116,21 @@ a{
   }
   .footer{
     padding: 0 30px;
-    height: 60px;
+    height: 50px;
     &__menu{
       &__list{
         font-size: 16px;
       }
+    }
+  }
+  .contents{
+    padding: 30px 0;
+  }
+  .card{
+    padding: 0 30px;
+    &__wrap{
+      width: 100%;
+      height: 500px;
     }
   }
 }

@@ -5,7 +5,7 @@
         <h1 class="header__logo">Look Share</h1>
       </div>
     </div>
-    <my-home></my-home>
+    <homeContainer></homeContainer>
     <div class="footer">
       <ul class="footer__menu">
         <li class="footer__menu__list">POST</li>
@@ -18,12 +18,16 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import myHome from "./components/myHome.vue";
+import homeContainer from "./components/homeContainer.vue";
 
 export default {
   name: "App",
+  data() {
+    return {};
+  },
+  mounted() {},
   components: {
-    myHome,
+    homeContainer,
   },
 };
 </script>

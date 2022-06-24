@@ -1,11 +1,11 @@
 <template>
-  <div class="contents">
-    <div class="contents__wrap">
-      <ul class="card">
-        <li class="card__list">ddd</li>
-        <li class="card__list">ddd</li>
-        <li class="card__list">ddd</li>
-      </ul>
+  <div class="card">
+    <div class="card__wrap">
+      <div class="card__image"></div>
+      <div class="card__content">
+        <p class="card__text">my first post</p>
+        <p class="liske">like!</p>
+      </div>
     </div>
   </div>
 </template>
