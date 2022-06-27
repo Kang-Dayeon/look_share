@@ -50,12 +50,19 @@ a{
     max-width: 1200px;
     height: 100%;
     &__list{
-      font-family: 'Rubik Puddles', cursive;
-      font-size: 24px;
-      font-weight: 400;
-      color: white;
-      cursor: pointer;
+      label{
+        font-family: 'Rubik Puddles', cursive;
+        font-size: 24px;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+      }
     }
+  }
+}
+.input{
+  &-btn{
+    display: none;
   }
 }
 .contents{

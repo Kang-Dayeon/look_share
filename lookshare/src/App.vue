@@ -8,9 +8,18 @@
     <homeContainer></homeContainer>
     <div class="footer">
       <ul class="footer__menu">
-        <li class="footer__menu__list">POST</li>
-        <li class="footer__menu__list">HOME</li>
-        <li class="footer__menu__list">MY SHOP</li>
+        <li class="footer__menu__list">
+          <input accept="image/*" type="file" id="file" class="input-btn" />
+          <label for="file" class="input__post">POST</label>
+        </li>
+        <li class="footer__menu__list">
+          <input type="button" id="input__home" class="input-btn" />
+          <label for="input__home">Home</label>
+        </li>
+        <li class="footer__menu__list">
+          <input type="button" id="input__shop" class="input-btn" />
+          <label for="input__shop">MY SHOP</label>
+        </li>
       </ul>
     </div>
   </div>
