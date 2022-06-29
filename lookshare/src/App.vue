@@ -18,7 +18,7 @@
         </li>
         <li class="footer__menu__list">
           <input type="button" id="input__shop" class="input-btn" />
-          <label for="input__shop">MY SHOP</label>
+          <label for="input__shop">MY SHOP LIST</label>
         </li>
       </ul>
     </div>
