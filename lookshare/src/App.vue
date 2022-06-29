@@ -14,7 +14,7 @@
         </li>
         <li class="footer__menu__list">
           <input type="button" id="input__home" class="input-btn" />
-          <label for="input__home">Home</label>
+          <label for="input__home">HOME</label>
         </li>
         <li class="footer__menu__list">
           <input type="button" id="input__shop" class="input-btn" />
