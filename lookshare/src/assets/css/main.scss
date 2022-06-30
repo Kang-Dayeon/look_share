@@ -76,7 +76,7 @@ a{
 // card
 .card{
   margin-bottom: 30px;
-  padding: 0 50px;
+  padding: 0 30px;
   width: 100%;
   &__wrap{
     margin: 0 auto;
@@ -106,7 +106,7 @@ a{
   }
   &__image{
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: #eee;
     background: url(./../src/assets/image/post.jpeg);
     background-repeat: no-repeat;
@@ -132,9 +132,16 @@ a{
     margin-left: 10px;
   }
 }
+@media screen and (max-width: 560px){
+  .card{
+    &__wrap{
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
 
-
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 420px) {
   .header{
     height: 50px;
     &__logo{
@@ -152,13 +159,22 @@ a{
   }
   .contents{
     padding: 30px 0;
-    min-height: calc(100vh - 100px);
   }
   .card{
-    padding: 0 30px;
-    &__wrap{
-      width: 100%;
-      height: 500px;
+    &__header{
+      padding: 0 20px;
+      height: 40px;
+    }
+    &__frofile-image{
+      width: 25px;
+      height: 25px;
+    }
+    &__image{
+      height: 400px;
+    }
+    &__content{
+      padding: 15px 20px;
+      font-size: 12px;
     }
   }
 }
