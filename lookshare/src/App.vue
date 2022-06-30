@@ -5,7 +5,7 @@
         <h1 class="header__logo">Look Share</h1>
       </div>
     </div>
-    <homeContainer></homeContainer>
+    <homeContainer :listData="listData"></homeContainer>
     <div class="footer">
       <ul class="footer__menu">
         <li class="footer__menu__list">
@@ -28,11 +28,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import homeContainer from "./components/homeContainer.vue";
+import listData from "./assets/list.js";
 
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      listData: listData,
+    };
   },
   mounted() {},
   components: {

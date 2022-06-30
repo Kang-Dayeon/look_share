@@ -1,7 +1,13 @@
 <template>
   <div class="contents">
-    <myHome></myHome>
-    <myHome></myHome>
+    <myHome
+      :i="i"
+      :listData="listData[i]"
+      v-for="(a, i) in listData"
+      :key="i"
+    ></myHome>
+    <!-- <myHome :listData="listData[1]"></myHome>
+    <myHome :listData="listData[2]"></myHome> -->
   </div>
 </template>
 
@@ -16,6 +22,9 @@ export default {
   mounted() {},
   components: {
     myHome,
+  },
+  props: {
+    listData: Array,
   },
 };
 </script>
