@@ -5,20 +5,79 @@
         <h1 class="header__logo">Look Share</h1>
       </div>
     </div>
-    <homeContainer :listData="listData"></homeContainer>
+
+    <div class="container">
+      <homeContainer :listData="listData" :tab="tab"></homeContainer>
+    </div>
+
     <div class="footer">
       <ul class="footer__menu">
-        <li class="footer__menu__list">
-          <input accept="image/*" type="file" id="file" class="input-btn" />
-          <label for="file" class="input__post">POST</label>
+        <li class="footer__menu__list" v-if="tab == 0 || tab == 3">
+          <input
+            accept="image/*"
+            type="file"
+            id="file"
+            class="input-btn"
+            @click="tab = 1"
+          />
+          <label for="file" class="input__post"
+            ><font-awesome-icon icon="fa-solid fa-plus"
+          /></label>
+        </li>
+        <li class="footer__menu__list" v-if="tab == 1 || tab == 2">
+          <input
+            type="button"
+            id="input__before"
+            class="input-btn"
+            @click="tab--"
+          />
+          <label for="input__before"
+            ><font-awesome-icon icon="fa-solid fa-chevron-left"
+          /></label>
         </li>
         <li class="footer__menu__list">
-          <input type="button" id="input__home" class="input-btn" />
-          <label for="input__home">HOME</label>
+          <input
+            type="button"
+            id="input__home"
+            class="input-btn"
+            @click="tab = 0"
+          />
+          <label for="input__home"
+            ><font-awesome-icon icon="fa-solid fa-house"
+          /></label>
         </li>
-        <li class="footer__menu__list">
-          <input type="button" id="input__shop" class="input-btn" />
-          <label for="input__shop">MY SHOP</label>
+        <li class="footer__menu__list" v-if="tab == 0 || tab == 3">
+          <input
+            type="button"
+            id="input__shop"
+            class="input-btn"
+            @click="tab = 3"
+          />
+          <label for="input__shop"
+            ><font-awesome-icon icon="fa-solid fa-store"
+          /></label>
+        </li>
+        <li class="footer__menu__list" v-if="tab == 1">
+          <input
+            type="button"
+            id="input__next"
+            class="input-btn"
+            @click="tab++"
+          />
+          <label for="input__next"
+            ><font-awesome-icon icon="fa-solid fa-chevron-right"
+          /></label>
+        </li>
+        <li class="footer__menu__list" v-if="tab == 2">
+          <input
+            type="button"
+            id="input__upload"
+            class="input-btn"
+            @click="tab = 0"
+          />
+          <label for="input__upload"
+            ><font-awesome-icon icon="fa-solid fa-check"
+          /></label>
         </li>
       </ul>
     </div>
@@ -35,6 +94,7 @@ export default {
   data() {
     return {
       listData: listData,
+      tab: 0,
     };
   },
   mounted() {},
