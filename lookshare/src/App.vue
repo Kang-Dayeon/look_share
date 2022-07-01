@@ -112,6 +112,9 @@ export default {
       this.image = url;
       this.tab++;
     },
+    foo() {
+      this.$http.get("/user");
+    },
   },
 };
 </script>
