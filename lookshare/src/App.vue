@@ -7,18 +7,22 @@
     </div>
 
     <div class="container">
-      <homeContainer :listData="listData" :tab="tab"></homeContainer>
+      <homeContainer
+        :listData="listData"
+        :tab="tab"
+        :image="image"
+      ></homeContainer>
     </div>
 
     <div class="footer">
       <ul class="footer__menu">
         <li class="footer__menu__list" v-if="tab == 0 || tab == 3">
           <input
+            @change="upload"
             accept="image/*"
             type="file"
             id="file"
             class="input-btn"
-            @click="tab = 1"
           />
           <label for="file" class="input__post"
             ><font-awesome-icon icon="fa-solid fa-plus"
@@ -95,11 +99,19 @@ export default {
     return {
       listData: listData,
       tab: 0,
+      image: "",
     };
   },
-  mounted() {},
   components: {
     homeContainer,
+  },
+  methods: {
+    upload(e) {
+      let file = e.target.files;
+      let url = URL.createObjectURL(file[0]);
+      this.image = url;
+      this.tab++;
+    },
   },
 };
 </script>

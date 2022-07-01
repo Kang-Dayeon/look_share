@@ -13,7 +13,7 @@
         :key="i"
       ></myHome>
     </div>
-    <upload-page :tab="tab"></upload-page>
+    <upload-page :tab="tab" :image="image"></upload-page>
   </div>
 </template>
 
@@ -34,6 +34,7 @@ export default {
   props: {
     listData: Array,
     tab: Number,
+    image: String,
   },
 };
 </script>

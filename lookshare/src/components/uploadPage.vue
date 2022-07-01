@@ -1,7 +1,10 @@
 <template>
   <div class="upload-box">
     <div v-if="tab == 1">
-      <div class="upload__image"></div>
+      <div
+        class="upload__image"
+        :style="`background-image:url(${image})`"
+      ></div>
       <ul class="filter">
         <li class="filter__list"></li>
         <li class="filter__list"></li>
@@ -12,7 +15,10 @@
     </div>
 
     <div v-if="tab == 2">
-      <div class="upload__image"></div>
+      <div
+        class="upload__image"
+        :style="`background-image:url(${image})`"
+      ></div>
       <div class="write">
         <textarea class="write__box"></textarea>
       </div>
@@ -28,6 +34,7 @@ export default {
   },
   props: {
     tab: Number,
+    image: String,
   },
 };
 </script>
