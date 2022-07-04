@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-// import axios from "axios";
+import axios from "axios";
 
 //fort-awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -18,7 +18,7 @@ library.add(faHouse, faPlus, faUser, faChevronLeft, faChevronRight, faCheck, faM
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-// Vue.prototype.$http = axios;
+Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false
 
