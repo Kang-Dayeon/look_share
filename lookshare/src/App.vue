@@ -92,7 +92,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import homeContainer from "./components/homeContainer.vue";
 import listData from "./assets/list.js";
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "App",
@@ -112,14 +112,6 @@ export default {
       let url = URL.createObjectURL(file[0]);
       this.image = url;
       this.tab++;
-    },
-    // foo() {
-    //   this.$http.get("/user");
-    // },
-    more() {
-      axios.get("http://localhost:3000/").then(function (결과) {
-        console.log(결과);
-      });
     },
   },
 };

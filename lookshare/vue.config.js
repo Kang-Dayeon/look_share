@@ -1,2 +1,4 @@
-// const { defineConfig } = require('@vue/cli-service')
-module.exports = { outputDir: "../back/backend/public" }
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true
+})
