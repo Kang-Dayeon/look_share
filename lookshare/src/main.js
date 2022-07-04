@@ -17,9 +17,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faHouse, faPlus, faUser, faChevronLeft, faChevronRight, faCheck, faMessage)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false
+
 
 new Vue({
   render: h => h(App),

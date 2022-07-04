@@ -74,7 +74,7 @@
         </li>
         <li class="footer__menu__list" v-if="tab == 2">
           <input
-            type="button"
+            type="submit"
             id="input__upload"
             class="input-btn"
             @click="tab = 0"
@@ -92,6 +92,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import homeContainer from "./components/homeContainer.vue";
 import listData from "./assets/list.js";
+import axios from "axios";
 
 export default {
   name: "App",
@@ -112,8 +113,13 @@ export default {
       this.image = url;
       this.tab++;
     },
-    foo() {
-      this.$http.get("/user");
+    // foo() {
+    //   this.$http.get("/user");
+    // },
+    more() {
+      axios.get("http://localhost:3000/").then(function (결과) {
+        console.log(결과);
+      });
     },
   },
 };
