@@ -24,9 +24,9 @@
             id="file"
             class="input-btn"
           />
-          <label for="file" class="input__post"
-            ><font-awesome-icon icon="fa-solid fa-plus"
-          /></label>
+          <label for="file" class="input__post">
+            <font-awesome-icon icon="fa-solid fa-plus" />
+          </label>
         </li>
         <li class="footer__menu__list" v-if="tab == 1 || tab == 2">
           <input
@@ -35,9 +35,9 @@
             class="input-btn"
             @click="tab--"
           />
-          <label for="input__before"
-            ><font-awesome-icon icon="fa-solid fa-chevron-left"
-          /></label>
+          <label for="input__before">
+            <font-awesome-icon icon="fa-solid fa-chevron-left" />
+          </label>
         </li>
         <li class="footer__menu__list">
           <input
@@ -46,20 +46,20 @@
             class="input-btn"
             @click="tab = 0"
           />
-          <label for="input__home"
-            ><font-awesome-icon icon="fa-solid fa-house"
-          /></label>
+          <label for="input__home">
+            <font-awesome-icon icon="fa-solid fa-house" />
+          </label>
         </li>
         <li class="footer__menu__list" v-if="tab == 0 || tab == 3">
           <input
             type="button"
-            id="input__shop"
+            id="input__mypage"
             class="input-btn"
             @click="tab = 3"
           />
-          <label for="input__shop"
-            ><font-awesome-icon icon="fa-solid fa-store"
-          /></label>
+          <label for="input__mypage">
+            <font-awesome-icon icon="fa-solid fa-user" />
+          </label>
         </li>
         <li class="footer__menu__list" v-if="tab == 1">
           <input
@@ -68,9 +68,9 @@
             class="input-btn"
             @click="tab++"
           />
-          <label for="input__next"
-            ><font-awesome-icon icon="fa-solid fa-chevron-right"
-          /></label>
+          <label for="input__next">
+            <font-awesome-icon icon="fa-solid fa-chevron-right" />
+          </label>
         </li>
         <li class="footer__menu__list" v-if="tab == 2">
           <input
@@ -79,9 +79,9 @@
             class="input-btn"
             @click="tab = 0"
           />
-          <label for="input__upload"
-            ><font-awesome-icon icon="fa-solid fa-check"
-          /></label>
+          <label for="input__upload">
+            <font-awesome-icon icon="fa-solid fa-check" />
+          </label>
         </li>
       </ul>
     </div>
