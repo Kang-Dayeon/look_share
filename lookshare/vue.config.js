@@ -1,8 +1,8 @@
 // const { dirname } = require('path')
 const path = require('path')
 module.exports = {
-  dev: {
-    proxyTable: {
+  devServer: {
+    proxy: {
       //proxy 요청을 보낼 api 시작 부분
       '/api': {
         target: 'http://localhost:3000/api',

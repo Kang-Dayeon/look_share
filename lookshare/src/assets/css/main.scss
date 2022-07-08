@@ -72,6 +72,7 @@ a{
   background: radial-gradient(circle, rgba(174,174,238,1) 0%, rgba(255,244,254,1) 74%);
   min-height: calc(100vh - 120px);
   overflow: hidden;
+  text-align: center;
 }
 .contents{
   margin: auto;
@@ -123,6 +124,9 @@ a{
     height: 30px;
     border-radius: 50%;
     background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
   }
   &__user-name{
     margin-left: 10px;
@@ -205,6 +209,8 @@ a{
     border-radius: 10px;
   }
 }
+
+.sing{}
 
 @media screen and (max-width: 560px){
   .card{
