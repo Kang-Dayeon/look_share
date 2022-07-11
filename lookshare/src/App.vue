@@ -2,7 +2,7 @@
   <div>
     <div class="header">
       <div class="header__inner">
-        <h1 class="header__logo">Look Shareㄹㄹ</h1>
+        <h1 class="header__logo">Look Share</h1>
       </div>
     </div>
 
