@@ -2,25 +2,21 @@
   <div>
     <div class="header">
       <div class="header__inner">
-        <h1 class="header__logo">Look Share</h1>
+        <h1 class="header__logo">Look Shareㄹㄹ</h1>
       </div>
     </div>
 
     <div class="container">
-      <mainContainer
-        :listData="listData"
-        :tab="tab"
-        :image="image"
-      />
-      <signUp :tab="tab"/>
+      <mainContainer :listData="listData" :tab="tab" :image="image" />
+      <signUp :tab="tab" />
     </div>
-    <FooterMenu 
-    :tab="tab"
-    @upload = "upload()"
-    @tabMinus = "tab--"
-    @tabZero = "tab = 0"
-    @tabThree = "tab = 3"
-    @tabPlus = "tab++"
+    <FooterMenu
+      :tab="tab"
+      @upload="upload()"
+      @tabMinus="tab--"
+      @tabZero="tab = 0"
+      @tabThree="tab = 3"
+      @tabPlus="tab++"
     />
   </div>
 </template>
@@ -45,7 +41,7 @@ export default {
     mainContainer,
     FooterMenu,
     signUp,
-},
+  },
   methods: {
     upload(e) {
       let file = e.target.files;
