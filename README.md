@@ -12,5 +12,3 @@
 <br>
 <p>제작시 사용한 스킬🛠</p>
 <p>Frontend : vue, scss</p>
-<p>Backend : node.js, express</p>
-<p>DB : mongoDB</p>
