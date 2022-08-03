@@ -5,7 +5,7 @@
         <font-awesome-icon icon="fa-solid fa-message" />
       </button>
     </div>
-    <div v-if="tab == 0">
+    <div v-if="tab == 0" class="main">
       <postList
         :i="i"
         :listData="listData[i]"

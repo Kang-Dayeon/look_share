@@ -2,8 +2,13 @@
   <div class="card">
     <div class="card__wrap">
       <div class="card__header">
-        <div class="card__frofile-image" :style="{ backgroundImage: `url(${listData.frofile})` }"></div>
-        <p class="card__user-name">{{ listData.name }}</p>
+        <div class="card__frofile-info">
+          <div class="card__frofile-image" :style="{ backgroundImage: `url(${listData.frofile})` }"></div>
+          <p class="card__user-name">{{ listData.name }}</p>
+        </div>
+        <div class="card__frofile-like">
+          <font-awesome-icon icon="fa-solid fa-heart" />
+        </div>
       </div>
       <div
         class="card__image"
