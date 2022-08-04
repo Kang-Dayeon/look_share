@@ -7,7 +7,7 @@
           <p class="card__user-name">{{ listData.name }}</p>
         </div>
         <div class="card__frofile-like">
-          <font-awesome-icon icon="fa-solid fa-heart" />
+          <font-awesome-icon icon="fa-solid fa-heart" /> <span>{{ listData.likes }}</span>
         </div>
       </div>
       <div

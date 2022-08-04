@@ -1,8 +1,8 @@
 <template>
   <div class="contents">
-    <div class="chat">
-      <button class="chat__btn">
-        <font-awesome-icon icon="fa-solid fa-message" />
+    <div class="menu">
+      <button class="menu__btn">
+        <font-awesome-icon icon="fa-solid fa-bars" />
       </button>
     </div>
     <div v-if="tab == 0" class="main">
