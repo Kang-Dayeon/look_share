@@ -6,6 +6,8 @@
       </div>
     </div>
 
+    <mainCategory></mainCategory>
+
     <div class="container">
       <mainContainer :listData="listData" :tab="tab" :image="image" />
       <signUp :tab="tab" />
@@ -26,6 +28,7 @@ import mainContainer from "./components/mainContainer.vue";
 import listData from "./assets/list.js";
 import FooterMenu from "./common/footerMenu.vue";
 import signUp from "./components/signUp.vue";
+import mainCategory from "./components/mainCategory.vue"
 // import axios from "axios";
 
 export default {
@@ -41,6 +44,7 @@ export default {
     mainContainer,
     FooterMenu,
     signUp,
+    mainCategory,
   },
   methods: {
     upload(e) {

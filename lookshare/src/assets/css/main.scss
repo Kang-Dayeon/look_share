@@ -97,8 +97,8 @@ a{
   margin: auto;
 }
 
-// chat
-.chat{
+// menu
+.menu{
   position: fixed;
   bottom: 55px;
   right: 10px;
@@ -118,7 +118,51 @@ a{
     font-size: 24px;
     cursor: pointer;
   }
+  &-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(174,174,238);
+    color: #fff;
+    .active{
+      display: block;
+    }
+  }
+  &-header{
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+  }
+  &-back{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    &-btn{
+      font-size: 22px;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+  &-title{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &-item{
+    border-top: 1px solid ghostwhite;
+    padding: 10px 0;
+    &:last-child{
+      border-bottom: 1px solid ghostwhite;
+    }
+  }
 }
+
 
 // card
 .main{
@@ -163,8 +207,7 @@ a{
       background-size: cover;
     }
     &-like{
-      font-size: 14px;
-      color: rgb(174,174,238);
+      font-size: 12px;
       cursor: pointer;
     }
   }
@@ -337,11 +380,14 @@ a{
       height: 400px;
     }
   }
-  .chat{
+  .menu{
     width: 45px;
     height: 45px;
     &__btn{
       font-size: 22px;
+    }
+    &-container{
+      width: 100%;
     }
   }
 }
